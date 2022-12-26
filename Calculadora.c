@@ -5,15 +5,15 @@
 
 int suma();
 int resta();
-int mult();
-int divi();
+//int mult();
+//int divi();
 int salir();
 int op;
 
 int main(int argc, char *argv[]) {
 
 	do{
-		printf("Selecciona la operacion a realizar en la calculadora:\n1. Suma\n2. Resta\n3. Multiplicacion\n4. Division\n5. Salir\n\n");
+		printf("Selecciona la operacion a realizar en la calculadora:\n1. Suma\n2. Resta\n5. Salir\n\n");
 		scanf("%d",&op);
 	
 		switch (op){
@@ -25,13 +25,13 @@ int main(int argc, char *argv[]) {
 			resta();
 			break;
 		
-		case 3:
+		/*case 3:
 			mult();
 			break;
 		
 		case 4:
 			divi();
-			break;
+			break;*/
 		
 		case 5:
 			salir();
@@ -66,7 +66,7 @@ int resta(){
 	printf("Escribe el primer numero a restar:\n ");
 	scanf("%d", &n1);
 	printf("Escribe el segundo numero a restar: \n");
-	scanf("%d", n2);
+	scanf("%d", &n2);
 	rest=n1-n2;
 	printf("La resta es: %d\n",rest);
 	return 0;
